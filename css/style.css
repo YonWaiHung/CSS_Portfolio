@@ -1,0 +1,171 @@
+
+/* ------------GLOBAL STYLES------------ */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+img {
+    width: 300px;
+}
+
+h2 {
+    margin: 0;
+}
+
+h2, h3 {
+    font-family: 'Caveat', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+/* ------------PROFILE------------ */
+header {
+    background: #2F3061;
+    color: #F7FFF7;
+}
+
+header h2 {
+    color:rgb(240, 255, 29);
+}
+
+/* ------------PROJECTS------------ */
+.projects {
+    background: #F7FFF7;
+}
+
+.projects h3{
+    margin-top: 0;
+}
+
+.projects h2 , .projects h3{
+    color: rgb(47, 99, 158);
+}
+
+.projects a {
+    background: #2F3061;
+    color: #F7FFF7;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.projects a:hover {
+    background: rgba(47, 48, 97, 80%);
+}
+
+.project-item {
+    overflow: hidden;
+    border-top: 1px double #343434;
+    padding: 25px 0;
+}
+.floater {
+    text-align: right;
+}
+.floater img {
+    margin-left: 20px;
+    float: right;
+}
+
+/* ------------WORK EXPERIENCE------------ */
+.work-experience {
+    clear: both;
+    background: #A1C607;
+}
+
+.work-experience h2, .work-experience h3{
+    color: rgb(247, 227, 131);
+}
+
+.work-experience a {
+    background: rgb(255, 230, 109);
+    color: rgb(29, 27, 27);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.work-experience a:hover {
+    background: rgba(255, 230, 109, 80%);
+}
+
+/* ------------EDUCATION------------ */
+.education a {
+    background: rgb(85, 107, 47);
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.education h2, .education h3 {
+    color: darkolivegreen;
+}
+
+.education a:hover {
+    background: rgba(85, 107, 47, 80%);
+}
+
+/* ------------CONTACT INFO------------ */
+footer {
+    background: rgb(247, 227, 118);
+}
+
+footer img {
+    width: 50px;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+@media screen and (min-width: 699px){
+    header, footer {
+        text-align: center;
+    }
+
+    .work-item {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        column-gap: 20px;
+    }
+
+    .contact-list {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-list a, .contact-list p{
+        padding: 15px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 700px){
+    header h1, header h2{
+        margin: 0;
+    }
+    header p{
+        margin-top: 0;
+    }
+}
